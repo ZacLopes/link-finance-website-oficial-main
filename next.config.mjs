@@ -20,7 +20,9 @@ const nextConfig = {
     minimumCacheTTL: 31536000, // Aumentado para 1 ano para melhor cache
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
-    unoptimized: false,
+    // v0 preview often fails on the Next image optimizer route.
+    // Serving images directly is more robust across GitHub imports and local/Vercel environments.
+    unoptimized: true,
     deviceSizes: [640, 750, 828, 1080, 1200, 1920], // Tamanhos otimizados baseados no relatório PageSpeed
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384, 512],
     loader: 'default',

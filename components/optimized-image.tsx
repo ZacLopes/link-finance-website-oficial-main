@@ -191,7 +191,7 @@ export default function OptimizedImage({
   style,
   loading = "lazy",
   fetchPriority = "auto",
-  placeholder = "blur",
+  placeholder = "empty",
   blurDataURL,
   ...props
 }: OptimizedImageProps) {
