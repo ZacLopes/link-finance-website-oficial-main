@@ -1,8 +1,22 @@
 import { createClient as createSupabaseClient } from "@supabase/supabase-js"
 
+// Helper to strip accidental "KEY=value" format if the env var was set incorrectly
+function parseEnvValue(value: string | undefined): string | undefined {
+  if (!value) return undefined
+  const eqIndex = value.indexOf("=")
+  // If the portion before "=" looks like an env var name (uppercase + underscores), strip it
+  if (eqIndex > 0) {
+    const prefix = value.slice(0, eqIndex)
+    if (/^[A-Z][A-Z0-9_]+$/.test(prefix)) {
+      return value.slice(eqIndex + 1)
+    }
+  }
+  return value
+}
+
 export const createSupabaseServerClient = () => {
-  const supabaseUrl = process.env.SUPABASE_URL
-  const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY
+  const supabaseUrl = parseEnvValue(process.env.SUPABASE_URL)
+  const supabaseKey = parseEnvValue(process.env.SUPABASE_SERVICE_ROLE_KEY)
 
   if (!supabaseUrl) {
     console.error("SUPABASE_URL não está definida nas variáveis de ambiente")
