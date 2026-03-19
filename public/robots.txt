@@ -1,0 +1,17 @@
+# Link Finance - Robots.txt
+# Updated: 2025-08-20 11:30 - Fresh deployment for Googlebot
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+
+# Static resources
+Allow: /_next/static/
+Allow: /_next/image/
+Allow: /favicon-linkfinance.png
+Allow: /images/
+Allow: /manifest.webmanifest
+
+Sitemap: https://linksbfinance.com/sitemap.xml

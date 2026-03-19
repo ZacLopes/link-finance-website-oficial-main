@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+    <msapplication>
+        <tile>
+             Using existing favicon file instead of non-existent favicon.png 
+            <square150x150logo src="/favicon-linkfinance.png"/>
+            <TileColor>#1a365d</TileColor>
+        </tile>
+    </msapplication>
+</browserconfig>
