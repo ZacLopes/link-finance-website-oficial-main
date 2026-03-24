@@ -29,6 +29,7 @@ export default function MentorsSection() {
               company={mentor.company}
               image={mentor.image}
               bio={mentor.bio}
+              linkedin={mentor.linkedin}
             />
           ))}
         </div>
