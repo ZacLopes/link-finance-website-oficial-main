@@ -13,7 +13,7 @@ export const mentorsData: Mentor[] = [
     role: "Vice-Presidente - Private Equity",
     company: "Confrapar",
     image: "/images/yago-moreira.png",
-    bio: "Vice-presidente da Confrapar, com ampla experiência em investimentos e desenvolvimento de negócios no mercado brasileiro.",
+    bio: "Ex‑CFO com experiência em private equity, M&A e investimentos estratégicos, liderando áreas financeiras em projetos de energia e crescimento.",
     linkedin: "https://www.linkedin.com/in/yagomoreirasilva/",
   },
   {
@@ -21,7 +21,7 @@ export const mentorsData: Mentor[] = [
     role: "Investment Manager",
     company: "Astella",
     image: "/images/vitor-pajaro.png",
-    bio: "Gestor de investimentos na Astella, especializado em análise de startups e empresas de tecnologia com alto potencial de crescimento.",
+    bio: "Co‑Founder construindo seu novo projeto após sair de venture capital; experiência em análise de startups e investimento em tecnologia.",
     linkedin: "https://www.linkedin.com/in/vitor-pajaro-2616b8b1/",
   },
   {
