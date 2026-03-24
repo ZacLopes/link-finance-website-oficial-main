@@ -71,7 +71,7 @@ const DynamicPartnersSection = dynamic(() => import("@/components/partners-secti
   ssr: false,
 })
 
-const DynamicMentorsSection = dynamic(() => import("@/components/sections/mentors-section"), {
+const DynamicMentorsSection = dynamic(() => import("@/components/sections/mentors-section").then(mod => mod), {
   loading: () => (
     <div className="py-12 md:py-16 lg:py-24">
       <div className="container">
